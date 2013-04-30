@@ -41,7 +41,7 @@ designer will help put some together, but for now the styles are inherited from
 your theme.  Here are some basic styles you could add to your theme as a
 starting point:.
 
-`
+```CSS
 /**
  * Pull Quotes
  */
@@ -62,7 +62,7 @@ starting point:.
 span.pulledquote {
 		max-width:35%;
 }
-`
+```
 
 ## Changelog
 
