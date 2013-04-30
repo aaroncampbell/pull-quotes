@@ -1,0 +1,10 @@
+.wp_themeSkin span.mce_pullquote {
+	background-image: url('../images/pullquote-2x.png');
+	background-position: top;
+	width:20px;
+	height:20px;
+	background-size: 100%;
+}
+.wp_themeSkin a:hover span.mce_pullquote {
+	background-position: bottom;
+}
