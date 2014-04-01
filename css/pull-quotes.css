@@ -1,4 +1,5 @@
-.wp_themeSkin span.mce_pullquote {
+.wp_themeSkin span.mce_pullquote,
+i.mce-i-pullquote {
 	background-image: url('../images/pullquote-2x.png');
 	background-position: top;
 	width:20px;

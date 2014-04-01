@@ -3,8 +3,8 @@ Contributors: aaroncampbell, PeteMall, range, saracannon
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9993090
 Tags: pull quotes
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 1.0.0
+Tested up to: 3.9
+Stable tag: 1.0.1
 
 Pull Quotes done right!  No duplicate or out of order content.  Create pull quotes right from your editor.
 
