@@ -3,7 +3,7 @@
  * Plugin Name: Pull Quotes
  * Plugin URI: http://ran.ge
  * Description: Pull Quotes done right
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Aaron D. Campbell
  * Author URI: http://ran.ge/
  * License: GPLv2 or later
