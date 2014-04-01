@@ -60,7 +60,7 @@ starting point:.
 	font-size: 1.6em;
 }
 span.pulledquote {
-		max-width:35%;
+	max-width:35%;
 }
 ```
 
