@@ -14,6 +14,7 @@ Pull Quotes done right.  The pull quotes are created with javascript, so that
 you don't have any problems with out of order or duplicate content.
 
 Brought to you by <a href="http://ran.ge/" title="WordPress Development">Ran.ge</a>
+Collaborate on the plugin: <a href="https://github.com/OpenRange/pull-quotes">Pull Quotes on GitHub</a>
 
 == Installation ==
 
