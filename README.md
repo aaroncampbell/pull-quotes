@@ -7,7 +7,7 @@ Pull Quotes done right!  No duplicate or out of order content.  Create pull quot
 Pull Quotes done right.  The pull quotes are created with javascript, so that
 you don't have any problems with out of order or duplicate content.
 
-Brought to you by <a href="http://ran.ge/" title="WordPress Development">Ran.ge</a>
+Brought to you by <a href="http://aarondcampbell.com/" title="WordPress Plugins">Aaron D. Campbell</a>
 
 ## Installation
 

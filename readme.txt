@@ -1,10 +1,12 @@
 === Pull Quotes ===
-Contributors: aaroncampbell, PeteMall, range, saracannon
+Contributors: aaroncampbell
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9993090
 Tags: pull quotes
 Requires at least: 3.5
 Tested up to: 3.9
 Stable tag: 1.0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Pull Quotes done right!  No duplicate or out of order content.  Create pull quotes right from your editor.
 
@@ -13,8 +15,8 @@ Pull Quotes done right!  No duplicate or out of order content.  Create pull quot
 Pull Quotes done right.  The pull quotes are created with javascript, so that
 you don't have any problems with out of order or duplicate content.
 
-Brought to you by <a href="http://ran.ge/" title="WordPress Development">Ran.ge</a>
-Collaborate on the plugin: <a href="https://github.com/OpenRange/pull-quotes">Pull Quotes on GitHub</a>
+Collaborate on the plugin: <a href="https://github.com/aaroncampbell/pull-quotes">Pull Quotes on GitHub</a>
+Brought to you by <a href="http://aarondcampbell.com/" title="WordPress Plugins">Aaron D. Campbell</a>
 
 == Installation ==
 
