@@ -16,6 +16,7 @@ Pull Quotes done right.  The pull quotes are created with javascript, so that
 you don't have any problems with out of order or duplicate content.
 
 Collaborate on the plugin: <a href="https://github.com/aaroncampbell/pull-quotes">Pull Quotes on GitHub</a>
+
 Brought to you by <a href="http://aarondcampbell.com/" title="WordPress Plugins">Aaron D. Campbell</a>
 
 == Installation ==
