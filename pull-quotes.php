@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Pull Quotes
- * Plugin URI: http://ran.ge
+ * Plugin URI: http://aarondcampbell.com/wordpress-plugin/pull-quotes/
  * Description: Pull Quotes done right
  * Version: 1.0.1
  * Author: Aaron D. Campbell
