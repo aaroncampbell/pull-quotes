@@ -38,11 +38,12 @@ Pull quotes works in both the visual and text editor.
 
 Currently there's no UI for this, but you can add a few attributes to the
 shortcode to customize:
-align - Possible values are left, right or empty. Default is left.
-width - Specifies the width of the pull quote.  Can be any CSS width string such as 50%, 400px, or 10em.
-back - If you want the pull quote to be separated from the current paragraph, just specify how many paragraphs back to put it.  Can be any number.
-forward - If you want the pull quote to be separated from the current paragraph, just specify how many paragraphs forward to put it.  Can be any number.
-wrap - Used to wrap the pull quote in a paragraph tag.  Good for inserting between paragraphs.  Set to "true" defaults to ""
+
+ * align - Possible values are left, right or empty. Default is left.
+ * width - Specifies the width of the pull quote.  Can be any CSS width string such as 50%, 400px, or 10em.
+ * back - If you want the pull quote to be separated from the current paragraph, just specify how many paragraphs back to put it.  Can be any number.
+ * forward - If you want the pull quote to be separated from the current paragraph, just specify how many paragraphs forward to put it.  Can be any number.
+ * wrap - Used to wrap the pull quote in a paragraph tag.  Good for inserting between paragraphs.  Set to "true" defaults to ""
 
 = This looks ugly! =
 
