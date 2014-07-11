@@ -19,6 +19,15 @@ jQuery(document).ready(function($) {
 			}
 			$pel.before( $el.clone() );
 			$el.remove();
+		} else if ( $(this).data( 'forward' ) ) {
+			var $forward = parseInt($(this).data( 'forward' ));
+			var $pel = $el.parents( 'p' );
+			while( $forward > 0 ) {
+				$pel = $pel.next( 'p' );
+				--$forward;
+			}
+			$pel.before( $el.clone() );
+			$el.remove();
 		} else {
 			$el.parents('p').css( 'position', 'relative' );
 		}
