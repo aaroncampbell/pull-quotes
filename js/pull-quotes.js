@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 			var $back = parseInt($(this).data( 'back' ));
 			var $pel = $el.parents( 'p' );
 			while( $back > 0 ) {
-				$pel = $pel.prev( 'p' );
+				$pel = $pel.prev();
 				--$back;
 			}
 			$pel.before( $el.clone() );
@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
 			var $forward = parseInt($(this).data( 'forward' ));
 			var $pel = $el.parents( 'p' );
 			while( $forward > 0 ) {
-				$pel = $pel.next( 'p' );
+				$pel = $pel.next();
 				--$forward;
 			}
 			$pel.before( $el.clone() );
