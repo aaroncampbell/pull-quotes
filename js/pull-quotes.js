@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 			$(this).attr( 'style', '' );
 			$(this).attr( 'class', '' );
 		}
-		if ( $(this).data( 'back' ) ) {
+		if ( 'undefined'!== typeof $(this).data( 'back' ) ) {
 			var $back = parseInt($(this).data( 'back' ));
 			var $pel = $el.parents( 'p' );
 			while( $back > 0 ) {
@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
 			}
 			$pel.before( $el.clone() );
 			$el.remove();
-		} else if ( $(this).data( 'forward' ) ) {
+		} else if ( 'undefined' !== typeof $(this).data( 'forward' ) ) {
 			var $forward = parseInt($(this).data( 'forward' ));
 			var $pel = $el.parents( 'p' );
 			while( $forward > 0 ) {
@@ -33,3 +33,4 @@ jQuery(document).ready(function($) {
 		}
 	});
 });
+

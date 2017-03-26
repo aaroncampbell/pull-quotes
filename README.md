@@ -67,5 +67,11 @@ span.pulledquote {
 
 ## Changelog
 
+### 1.0.2
+* Allow forward and back parameters to be set to 0
+
+### 1.0.1
+* Add support for new TinyMCE
+
 ### 1.0.0
 * Released to wordpress.org repository

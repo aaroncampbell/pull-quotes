@@ -1,10 +1,9 @@
 === Pull Quotes ===
 Contributors: aaroncampbell
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9993090
-Tags: pull quotes
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 1.0.1
+Tested up to: 4.8
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +79,12 @@ span.pulledquote {
 == Upgrade Notice ==
 
 == Changelog ==
+
+= 1.0.2 =
+* Allow forward and back parameters to be set to 0
+
+= 1.0.1 =
+* Add support for new TinyMCE
 
 = 1.0.0 =
 * Released to wordpress.org repository

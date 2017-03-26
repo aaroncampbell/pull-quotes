@@ -3,7 +3,7 @@
  * Plugin Name: Pull Quotes
  * Plugin URI: http://aarondcampbell.com/wordpress-plugin/pull-quotes/
  * Description: Pull Quotes done right
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Aaron D. Campbell
  * Author URI: http://ran.ge/
  * License: GPLv2 or later
@@ -46,7 +46,7 @@ class pullQuotes {
 	}
 
 	function wp_enqueue_scripts() {
-		wp_register_script( 'pull-quotes', plugins_url( 'js/pull-quotes.js', __FILE__ ), array( 'jquery' ), '20130331', true );
+		wp_register_script( 'pull-quotes', plugins_url( 'js/pull-quotes.js', __FILE__ ), array( 'jquery' ), '20170324', true );
 	}
 
 	function admin_enqueue_scripts() {
@@ -58,8 +58,8 @@ class pullQuotes {
 		wp_enqueue_script( 'pull-quotes' );
 		$defaults = array(
 			'align'   => 'left',
-			'back'    => 0,
-			'forward' => 0,
+			'back'    => '',
+			'forward' => '',
 			'width'   => '',
 			'wrap'    => '',
 		);
@@ -72,10 +72,11 @@ class pullQuotes {
 		if ( ! empty( $attr['align'] ) )
 			$attr['align'] = ' align' . $attr['align'];
 		$data = '';
-		if ( ! empty( $attr['back'] ) )
+		if ( '' != $attr['back'] ) {
 			$data = ' data-back="' . absint( $attr['back'] ) . '"';
-		elseif ( ! empty( $attr['forward'] ) )
+		} elseif ( '' != $attr['forward'] ) {
 			$data = ' data-forward="' . absint( $attr['forward'] ) . '"';
+		}
 
 		if ( ! empty( $attr['width'] ) )
 			$data .= ' style="width:' . esc_attr( $attr['width'] ) . '"';
