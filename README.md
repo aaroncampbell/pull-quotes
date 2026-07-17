@@ -1,77 +1,62 @@
-# Pull Quotes WordPress Plugin
+# Pull Quotes
 
-Pull Quotes done right!  No duplicate or out of order content.  Create pull quotes right from your editor.
+Pull Quotes is a block-editor plugin for marking text that already appears in a post and echoing it as a floated callout.
 
-## Description
+## Requirements
 
-Pull Quotes done right.  The pull quotes are created with javascript, so that
-you don't have any problems with out of order or duplicate content.
+- WordPress 7.0 or later
+- PHP 8.3 or later
+- Block-authored content
 
-Brought to you by <a href="http://aarondcampbell.com/" title="WordPress Plugins">Aaron D. Campbell</a>
+## Authoring
 
-## Installation
+Select text in a Rich Text block and choose **Pull quote** in the block toolbar. The settings control:
 
-1. Use automatic installer to install and active the plugin.
+- **Offset:** the number of visible authored blocks from the block containing the selected text. Zero inserts the callout immediately before that block. Parser whitespace, generated pull quotes, and nested-container boundaries do not count.
+- **Direction:** move back or forward through the block tree.
+- **Alignment:** float the generated callout left or right.
 
-## Frequently Asked Questions
+The selected sentence remains in the body. On the front end, the plugin removes the inline authoring marker and inserts a decorative `<aside class="pullquote" aria-hidden="true">` before the resolved block. Rendering is performed server-side and does not require jQuery.
 
-**How do I create a pull quote?**
+## Migrating shortcodes
 
-Simply highlight the text you want to turn into a pull quote and click the pull
-quote button in your editor.
+Version 2.0 does not render `[pullquote]` shortcodes at runtime.
 
-**What about the visual editor?  What about the text editor?**
+- Go to **Tools → Pull Quotes Migration** to preview or migrate shortcodes in existing block posts.
+- Or run `wp pull-quotes migrate --dry-run`, then `wp pull-quotes migrate`.
+- For classic posts, open the post and use **Convert to blocks**. The editor integration converts its pull-quote shortcodes into inline markers as part of Core's conversion.
 
-Pull quotes works in both the visual and text editor.
+The migration maps positive `back` and `forward` values to `data-offset` plus `data-direction`, and preserves alignment and width where present.
 
-**Can I further customize the location or look of the pull quote?**
+## Development
 
-Currently there's no UI for this, but you can add a few attributes to the
-shortcode to customize:
+Run `composer install` for PHP tooling and `npm install` for editor tooling. Verify changes with:
 
-* align - Possible values are left, right or empty. Default is left.
-* width - Specifies the width of the pull quote.  Can be any CSS width string such as 50%, 400px, or 10em.
-* back - If you want the pull quote to be separated from the current paragraph, just specify how many paragraphs back to put it.  Can be any number.
-* forward - If you want the pull quote to be separated from the current paragraph, just specify how many paragraphs forward to put it.  Can be any number.
-* wrap - Used to wrap the pull quote in a paragraph tag.  Good for inserting between paragraphs.  Set to "true" defaults to ""
-
-**This looks ugly!**
-
-Currently there's no CSS packaged with the plugin.  At some point our amazing
-designer will help put some together, but for now the styles are inherited from
-your theme.  Here are some basic styles you could add to your theme as a
-starting point:.
-
-```CSS
-/**
- * Pull Quotes
- */
-
-.pulledquote {
-	border-top: none;
-	border-bottom: none;
-	background: transparent;
-	text-indent: 0;
-	margin: 20px;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	text-transform: uppercase;
-	color: #c65800;
-	font-style: italic;
-	font-size: 1.6em;
-}
-span.pulledquote {
-	max-width:35%;
-}
+```text
+composer lint
+npm run lint:js
+npm run build
 ```
 
 ## Changelog
 
+### 2.0.0
+
+- Require PHP 8.3 and WordPress 7.0.
+- Add a block-editor Rich Text format with offset, direction, and alignment controls.
+- Render pull quotes server-side using parsed block structure, without jQuery.
+- Keep quoted sentences in the reading flow and hide decorative copies from assistive technology.
+- Add admin, WP-CLI, and Convert-to-blocks migration paths for legacy shortcodes.
+- Remove the classic-editor TinyMCE and Quicktags integrations and runtime shortcode support.
+
 ### 1.0.2
-* Allow forward and back parameters to be set to 0
+
+- Allow forward and back parameters to be set to 0.
 
 ### 1.0.1
-* Add support for new TinyMCE
+
+- Add support for new TinyMCE.
 
 ### 1.0.0
-* Released to wordpress.org repository
+
+- Released to the WordPress.org repository.
