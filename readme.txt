@@ -1,9 +1,9 @@
 === Pull Quotes ===
 Contributors: aaroncampbell
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9993090
+Tags: pull quote, block editor, typography, writing, accessibility
 Requires at least: 7.0
 Requires PHP: 8.3
-Tested up to: 7.0.1
+Tested up to: 7.0
 Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -20,13 +20,18 @@ Version 2.0 supports block-authored content only and does not render legacy pull
 
 Collaborate on the plugin: <a href="https://github.com/aaroncampbell/pull-quotes">Pull Quotes on GitHub</a>
 
-Brought to you by <a href="http://aarondcampbell.com/" title="WordPress Plugins">Aaron D. Campbell</a>
+Brought to you by <a href="https://aarondcampbell.com/" title="WordPress Plugins">Aaron D. Campbell</a>
 
 == Installation ==
 
 1. Install and activate Pull Quotes.
 2. In the block editor, select text in a Rich Text block and choose Pull quote from the block toolbar.
 3. Choose an offset, direction, and alignment, then apply the format.
+
+== Screenshots ==
+
+1. Select text in the block editor, apply the Pull quote format, and configure its offset, direction, and alignment.
+2. The selected sentence remains in the article while a styled pull quote is positioned alongside the surrounding text.
 
 == Frequently Asked Questions ==
 

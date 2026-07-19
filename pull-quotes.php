@@ -7,8 +7,9 @@
  * Requires at least: 7.0
  * Requires PHP: 8.3
  * Author: Aaron D. Campbell
- * Author URI: http://aarondcampbell.com/
+ * Author URI: https://aarondcampbell.com/
  * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: pull-quotes
  *
  * @package Pull_Quotes
