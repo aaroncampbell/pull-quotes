@@ -38,6 +38,43 @@ npm run lint:js
 npm run build
 ```
 
+## Preparing a WordPress.org release
+
+The release helper validates the version and committed build, synchronizes only
+runtime files into the WordPress.org SVN trunk, copies directory-page assets,
+sets image MIME types, and creates the local SVN tag. It deliberately does not
+commit to WordPress.org.
+
+```powershell
+.\scripts\prepare-wordpress-release.ps1 -Version 2.0.0
+```
+
+By default, the script uses the sibling `pullquotes-svn` working copy. Specify
+another working-copy root with `-SvnPath`:
+
+```powershell
+.\scripts\prepare-wordpress-release.ps1 `
+    -Version 2.0.0 `
+    -SvnPath 'D:\wordpress-svn\pull-quotes'
+```
+
+The script looks for `svn.exe` on `PATH`, then checks the standard TortoiseSVN
+installation path. Use `-SvnExe` to specify a different executable. Add
+`-ShowDiff` to print the full SVN diff after preparation.
+
+Native PowerShell help and a command-line help switch are both available:
+
+```powershell
+Get-Help .\scripts\prepare-wordpress-release.ps1 -Full
+.\scripts\prepare-wordpress-release.ps1 --help
+```
+
+The complete help documents every parameter, including the `Skip*` and
+`AllowDirty*` switches intended for isolated testing or exceptional recovery.
+For a real release, use the normal command without those overrides. Review the
+printed `svn status` and `svn diff` before running the commit command printed by
+the script.
+
 ## Changelog
 
 ### 2.0.0
