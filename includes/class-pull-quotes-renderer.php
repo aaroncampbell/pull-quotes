@@ -368,7 +368,7 @@ final class Pull_Quotes_Renderer {
 	 * @return array<string, mixed> Aside block.
 	 */
 	private function aside_block( array $quote ): array {
-		$classes = 'pullquote align' . ( 'right' === $quote['align'] ? 'right' : 'left' );
+		$classes = 'pullquote pulledquote align' . ( 'right' === $quote['align'] ? 'right' : 'left' );
 		$style   = '';
 
 		if ( '' !== $quote['width'] ) {
